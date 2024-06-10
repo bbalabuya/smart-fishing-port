@@ -25,8 +25,8 @@
         }
     </style>
     <script>
-        function fetchSensorData() {
-            fetch('/sensor_data')
+        function fetchSensorData() { 
+            fetch('/sensor_data') //서버에서 응답을 받아와 웹에 출력시키기
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('temperature').innerText = `Temperature: ${data.temperature} °C`;
