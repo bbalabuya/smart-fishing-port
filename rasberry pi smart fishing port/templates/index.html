@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensor Data</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+  <header>
+    <h1 class="text-center">Fish Tank Monitoring System</h1>
+    <p class="text-center">Real-time sensor data from the fish tank</p>
+  </header>
+  <div class="container">
+    <div class="card-group">
+      <div class="card text-center">
+        <div class="card-body sensor-body">
+          <h2 class="card-title">Temperature</h2>
+          <div class="card-text" id="temp"></div>
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-body sensor-body">
+          <h2 class="card-title">Water Level</h2>
+          <div class="card-text" id="waterL"></div>
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-body sensor-body">
+          <h2 class="card-title">Turbidity</h2>
+          <div class="card-text" id="turb"></div>
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-body sensor-body">
+          <h2 class="card-title">Power of Hydrogen</h2>
+          <div class="card-text" id="ph"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card image-container text-center">
+      <div class="card-body">
+        <h2 class="card-title">Fish Tank</h2>
+        <img src="/stream.mjpg" alt="Sensor Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.1/progressbar.js"
+          integrity="sha512-wRKVoAheoKSLKZwDa4SZdRizJAi6sC5UFB7oipnEgzPBBN1O7x7MtU+hP1lfKvuCAS8KMwX18ryUCRH/8DxQgg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
+
+
+
